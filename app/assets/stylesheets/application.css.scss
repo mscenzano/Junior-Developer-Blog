@@ -55,7 +55,7 @@ a {
 			font-weight: 700;
 			font-size: 0.7em;
 			text-transform: uppercase;
-			color: #33acb7;
+			color: #FE2E2E;
 		}
 		li {
 			padding: .5em 0;
@@ -64,7 +64,7 @@ a {
 				text-decoration: none;
 				transition: all .4s ease;
 				&:hover {
-					color: #33acb7;
+					color: #FE2E2E;
 				}
 			}
 		}
@@ -90,10 +90,10 @@ a {
 	padding: .5em 1.5em;
 	border-radius: 1.5em;
 	&:hover {
-		border: 1px solid #33acb7;
-		color: #33acb7;
+		border: 1px solid #FE2E2E;
+		color: #FE2E2E;
 		a {
-			color: #33acb7 !important;
+			color: #FE2E2E !important;
 		}
 	}
 }

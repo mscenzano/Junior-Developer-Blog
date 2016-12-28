@@ -14,7 +14,7 @@
   <div id="sidebar">
   	<div id="logo" >
 		<%= link_to root_path do %>
-  		<%= image_tag "m.jpg", :class => "style_image" %>
+  		<%= image_tag "logito.png", :class => "style_image" %>
   		<% end %>  	
   	</div>
 
@@ -26,15 +26,18 @@
 
   	<ul>
   		<li class="category">Social</li>
-  		<li><a href="https://twitter.com">Twitter</a></li>
-  		<li><a href="https://twitter.com">Facebook</a></li>
+  		<li><a href="https://github.com/mscenzano">Github</a></li>
+  		<li><a href="https://www.linkedin.com/in/
+marianosdc
+">Linkedin</a></li>
   		<li><a href="mailto:mscenzano@gmail.com">Email</a></li>
 
   	</ul>
-	<p class="sign_in">Admin login</p>	
+
   </div>
   <div id="main_content">
   	<div id="header">
+    <p>JUNIOR DEVELOPER BLOG - </p>
     <% if current_page?(root_path) %>
   		<p>All Posts</p>
       <% elsif current_page?(about_path) %>
