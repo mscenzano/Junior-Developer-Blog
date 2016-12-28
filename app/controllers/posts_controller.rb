@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_action :post_find, only: [:show, :destroy]
+  before_action :post_find, only: [:show, :destroy, :edit, :update]
 
 
   def index
@@ -28,7 +28,20 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
+    redirect_to root_path
 
+  end
+
+  def edit
+    
+  end
+
+  def update
+    if @post.update(params[:post].permit(:title, :body))
+      redirect_to @post
+    else 
+      render 'edit'
+    end
   end
 
   private
